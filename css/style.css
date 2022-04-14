@@ -9,7 +9,7 @@ body {
 }
 
 .hide {
-  display: none;
+  display: non;
 }
 
 .container-1000 {
@@ -112,20 +112,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-.equipe-stats::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0.3;
-  background-image: url(/img/logos/alfaromeo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 400px;
-}
-
 .equipe-stats li,
 .piloto-stats li {
   display: flex;
@@ -149,11 +135,27 @@ h1 {
   object-fit: cover;
 }
 
-h2 {
+.pilotos {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 10px;
+}
+
+.pilotos h2 {
+  display: inline-block;
   font-size: 2rem;
-  margin-bottom: 20px;
   text-align: center;
   font-weight: bold;
+}
+
+.pilotos img {
+  display: inline-block;
+  object-fit: contain;
+  border-radius: 0px;
+}
+
+.piloto-stats {
+  grid-column: 1/-1;
 }
 
 .footer {
@@ -163,4 +165,70 @@ h2 {
   font-size: 1.2rem;
   text-align: center;
   margin-top: 30px;
+}
+
+#alfa-romeo:before,
+#alpha-tauri:before,
+#alpine:before,
+#aston-martin:before,
+#ferrari:before,
+#hass:before,
+#mclaren:before,
+#mercedes:before,
+#red-bull:before,
+#williams:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px;
+}
+
+#alfa-romeo:before {
+  background-image: url(/img/logos/alfaromeo.png);
+  background-size: 300px;
+}
+
+#alpha-tauri:before {
+  background-image: url(/img/logos/alphatauri.png);
+}
+
+#alpine:before {
+  background-image: url(/img/logos/alpine.png);
+}
+
+#aston-martin:before {
+  background-image: url(/img/logos/astonmartin.png);
+}
+
+#ferrari:before {
+  background-image: url(/img/logos/ferrari.png);
+  background-size: 290px;
+}
+
+#hass:before {
+  background-image: url(/img/logos/hass.png);
+  background-size: 300px;
+}
+
+#mclaren:before {
+  background-image: url(/img/logos/mclaren.png);
+}
+
+#mercedes:before {
+  background-image: url(/img/logos/mercedes.png);
+  background-size: 300px;
+}
+
+#red-bull:before {
+  background-image: url(/img/logos/redbull.png);
+}
+
+#williams:before {
+  background-image: url(/img/logos/williams.png);
 }
