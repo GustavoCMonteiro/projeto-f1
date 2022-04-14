@@ -92,4 +92,7 @@
   .modal-img {
     width: 80vw;
   }
+  .modal {
+    left: 0;
+  }
 }
