@@ -151,8 +151,6 @@ h1 {
 }
 
 .pilotos img {
-  display: inline-block;
-  object-fit: contain;
   border-radius: 0px;
 }
 
@@ -192,47 +190,47 @@ h1 {
 }
 
 #alfa-romeo:before {
-  background-image: url(/img/logos/alfaromeo.png);
+  background-image: url(../img/logos/alfaromeo.png);
   background-size: 300px;
 }
 
 #alpha-tauri:before {
-  background-image: url(/img/logos/alphatauri.png);
+  background-image: url(../img/logos/alphatauri.png);
 }
 
 #alpine:before {
-  background-image: url(/img/logos/alpine.png);
+  background-image: url(../img/logos/alpine.png);
 }
 
 #aston-martin:before {
-  background-image: url(/img/logos/astonmartin.png);
+  background-image: url(../img/logos/astonmartin.png);
 }
 
 #ferrari:before {
-  background-image: url(/img/logos/ferrari.png);
+  background-image: url(../img/logos/ferrari.png);
   background-size: 290px;
 }
 
 #hass:before {
-  background-image: url(/img/logos/hass.png);
+  background-image: url(../img/logos/hass.png);
   background-size: 300px;
 }
 
 #mclaren:before {
-  background-image: url(/img/logos/mclaren.png);
+  background-image: url(../img/logos/mclaren.png);
 }
 
 #mercedes:before {
-  background-image: url(/img/logos/mercedes.png);
+  background-image: url(../img/logos/mercedes.png);
   background-size: 300px;
 }
 
 #red-bull:before {
-  background-image: url(/img/logos/redbull.png);
+  background-image: url(../img/logos/redbull.png);
 }
 
 #williams:before {
-  background-image: url(/img/logos/williams.png);
+  background-image: url(../img/logos/williams.png);
 }
 
 @media (max-width: 1000px) {
