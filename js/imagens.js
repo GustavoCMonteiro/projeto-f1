@@ -8,16 +8,16 @@ for (let i = 0; i < imagens.length; i++) {
   imagens[i].addEventListener("click", function () {
     srcVal = imagens[i].getAttribute("src");
     modalimg.setAttribute("src", srcVal);
-    modal.classList.toggle("modal-active");
+    modal.classList.add("modal-active");
   });
 }
 
 close.addEventListener("click", function () {
-  modal.classList.toggle("modal-active");
+  modal.classList.remove("modal-active");
 });
 
-document.addEventListener('keydown', function(event){
-	if(event.key === "Escape"){
-		modal.classList.toggle("modal-active");
-	}
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    modal.classList.remove("modal-active");
+  }
 });
