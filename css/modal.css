@@ -84,6 +84,9 @@
 }
 
 @media (max-width: 500px) {
+  .card-img {
+    max-width: 180px;
+  }
   .small-img {
     max-width: 180px;
   }
