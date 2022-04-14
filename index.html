@@ -8,6 +8,7 @@
   <title>F1 2022</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
@@ -26,26 +27,54 @@
   </div>
   <nav class="container-1000">
     <ul class="equipes">
-      <li><a href="#"><img src="img/logos/alfaromeo.png" width="500" height="500" alt="Logotipo Alfa Romeo"></a></li>
-      <li><a href="#"><img src="img/logos/alphatauri.png" width="500" height="500" alt="Logotipo Alpha Tauri"></a></li>
-      <li><a href="#"><img src="img/logos/alpine.png" width="500" height="500" alt="Logotipo Alpine"></a></li>
-      <li><a href="#"><img src="img/logos/astonmartin.png" width="500" height="500" alt="Logotipo Aston Martin"></a></li>
-      <li><a href="#"><img src="img/logos/ferrari.png" width="500" height="500" alt="Logotipo Ferrari"></a></li>
-      <li><a href="#"><img src="img/logos/hass.png" width="500" height="500" alt="Logotipo Hass"></a></li>
-      <li><a href="#"><img src="img/logos/mclaren.png" width="500" height="500" alt="Logotipo Mclaren"></a></li>
-      <li><a href="#"><img src="img/logos/mercedes.png" width="500" height="500" alt="Logotipo Mercedes"></a></li>
-      <li><a href="#"><img src="img/logos/redbull.png" width="500" height="500" alt="Logotipo Red Bull"></a></li>
-      <li><a href="#"><img src="img/logos/williams.png" width="500" height="500" alt="Logotipo Williams"></a></li>
+      <div class="card-logo">
+        <li class="botao"><a href=""><img src="img/logos/alfaromeo.png" width="500" height="500" alt="Logotipo Alfa Romeo"></a></li>
+      </div>
+      <div class="card-logo">
+        <li class="botao"><a href=""><img src="img/logos/alphatauri.png" width="500" height="500" alt="Logotipo Alpha Tauri"></a></li>
+      </div>
+      <div class="card-logo">
+        <li class="botao"><a href=""><img src="img/logos/alpine.png" width="500" height="500" alt="Logotipo Alpine"></a></li>
+      </div>
+      <div class="card-logo">
+        <li class="botao"><a href=""><img src="img/logos/astonmartin.png" width="500" height="500" alt="Logotipo Aston Martin"></a></li>
+      </div>
+      <div class="card-logo">
+        <li class="botao"><a href=""><img src="img/logos/ferrari.png" width="500" height="500" alt="Logotipo Ferrari"></a></li>
+      </div>
+      <div class="card-logo">
+        <li class="botao"><a href=""><img src="img/logos/hass.png" width="500" height="500" alt="Logotipo Hass"></a></li>
+      </div>
+      <div class="card-logo">
+        <li class="botao"><a href=""><img src="img/logos/mclaren.png" width="500" height="500" alt="Logotipo Mclaren"></a></li>
+      </div>
+      <div class="card-logo">
+        <li class="botao"><a href=""><img src="img/logos/mercedes.png" width="500" height="500" alt="Logotipo Mercedes"></a></li>
+      </div>
+      <div class="card-logo">
+        <li class="botao"><a href=""><img src="img/logos/redbull.png" width="500" height="500" alt="Logotipo Red Bull"></a></li>
+      </div>
+      <div class="card-logo">
+        <li class="botao"><a href=""><img src="img/logos/williams.png" width="500" height="500" alt="Logotipo Williams"></a></li>
+      </div>
     </ul>
   </nav>
-  <section class="container-1000 hide">
+  <div class="modal">
+    <div class="modal-content">
+      <img class="modal-img" src="img/carros/alfa-romeo/alfa1.jpg" alt="">
+    </div>
+    <span class="close">&times;</span>
+  </div>
+  <section class="container-1000 alfa-romeo">
     <h1>Alfa Romeo</h1>
-    <picture class="img-grid">
-      <img src="img/carros/alfa-romeo/alfa1.jpg" width="1200" height="800" alt="Foto do carro da Alfa Romeo">
-      <img src="img/carros/alfa-romeo/alfa2.jpg" width="1200" height="800" alt="Foto do carro da Alfa Romeo">
-      <img src="img/carros/alfa-romeo/alfa3.jpg" width="1200" height="800" alt="Foto do carro da Alfa Romeo">
-      <img src="img/carros/alfa-romeo/alfa4.jpg" width="1200" height="800" alt="Foto do carro da Alfa Romeo">
-    </picture>
+    <div class="container-img">
+      <div class="img-grid row">
+        <picture class="card-img"><img class="small-img" src="img/carros/alfa-romeo/alfa1.jpg" width="1200" height="800" alt="Foto do carro da Alfa Romeo"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/alfa-romeo/alfa2.jpg" width="1200" height="800" alt="Foto do carro da Alfa Romeo"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/alfa-romeo/alfa3.jpg" width="1200" height="800" alt="Foto do carro da Alfa Romeo"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/alfa-romeo/alfa4.jpg" width="1200" height="800" alt="Foto do carro da Alfa Romeo"></picture>
+      </div>
+    </div>
     <div class="conteudo container-800">
       <ul class="equipe-stats" id="alfa-romeo">
         <li>Full Team Name <span>Alfa Romeo F1 Team ORLEN</span></li>
@@ -61,7 +90,7 @@
         <li>Fastest Laps <span>5</span></li>
       </ul>
       <img class="img-piloto" src="img/pilotos/bottas.jpg" width="1920" height="1920" alt="Foto do piloto Valtteri Bottas">
-      <img class="img-piloto" src="img/pilotos/zhou.jpg" width="1920" height="1920" alt="Foto do piloto Zhou Guanyu">
+      <img class="img-piloto2" src="img/pilotos/zhou.jpg" width="1920" height="1920" alt="Foto do piloto Zhou Guanyu">
       <div class="pilotos">
         <img src="img/bandeiras/finlandia.png" width="100" height="67" alt="">
         <h2>Valtteri Bottas</h2>
@@ -98,14 +127,16 @@
       </div>
     </div>
   </section>
-  <section class="container-1000 hide">
+  <section class="container-1000 hide alpha-tauri">
     <h1>Alpha Tauri</h1>
-    <picture class="img-grid">
-      <img src="img/carros/alpha-tauri/alpha1.jpg" width="1200" height="800" alt="Foto do carro da Alpha Tauri">
-      <img src="img/carros/alpha-tauri/alpha2.jpg" width="1200" height="800" alt="Foto do carro da Alpha Tauri">
-      <img src="img/carros/alpha-tauri/alpha3.jpg" width="1200" height="800" alt="Foto do carro da Alpha Tauri">
-      <img src="img/carros/alpha-tauri/alpha4.jpg" width="1200" height="800" alt="Foto do carro da Alpha Tauri">
-    </picture>
+    <div class="container-img">
+      <div class="img-grid row">
+        <picture class="card-img"><img class="small-img" src="img/carros/alpha-tauri/alpha1.jpg" width="1200" height="800" alt="Foto do carro da Alpha Tauri"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/alpha-tauri/alpha2.jpg" width="1200" height="800" alt="Foto do carro da Alpha Tauri"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/alpha-tauri/alpha3.jpg" width="1200" height="800" alt="Foto do carro da Alpha Tauri"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/alpha-tauri/alpha4.jpg" width="1200" height="800" alt="Foto do carro da Alpha Tauri"></picture>
+      </div>
+    </div>
     <div class="conteudo container-800">
       <ul class="equipe-stats" id="alpha-tauri">
         <li>Full Team Name <span>Scuderia AlphaTauri</span></li>
@@ -121,7 +152,7 @@
         <li>Fastest Laps <span>2</span></li>
       </ul>
       <img class="img-piloto" src="img/pilotos/gasly.jpg" width="1920" height="1920" alt="Foto do piloto Pierre Gasly">
-      <img class="img-piloto" src="img/pilotos/tsunoda.jpg" width="1920" height="1920" alt="Foto do piloto Yuki Tsunoda">
+      <img class="img-piloto2" src="img/pilotos/tsunoda.jpg" width="1920" height="1920" alt="Foto do piloto Yuki Tsunoda">
       <div class="pilotos">
         <img src="img/bandeiras/franca.png" width="100" height="67" alt="">
         <h2>Pierre Gasly</h2>
@@ -158,14 +189,16 @@
       </div>
     </div>
   </section>
-  <section class="container-1000 hide">
+  <section class="container-1000 hide alpine">
     <h1>Alpine</h1>
-    <picture class="img-grid">
-      <img src="img/carros/alpine/alpine1.jpg" width="1200" height="800" alt="Foto do carro da Alpine">
-      <img src="img/carros/alpine/alpine2.jpg" width="1200" height="800" alt="Foto do carro da Alpine">
-      <img src="img/carros/alpine/alpine3.jpg" width="1200" height="800" alt="Foto do carro da Alpine">
-      <img src="img/carros/alpine/alpine5.jpg" width="1200" height="800" alt="Foto do carro da Alpine">
-    </picture>
+    <div class="container-img">
+      <div class="img-grid row">
+        <picture class="card-img"><img class="small-img" src="img/carros/alpine/alpine1.jpg" width="1200" height="800" alt="Foto do carro da Alpine"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/alpine/alpine2.jpg" width="1200" height="800" alt="Foto do carro da Alpine"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/alpine/alpine3.jpg" width="1200" height="800" alt="Foto do carro da Alpine"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/alpine/alpine5.jpg" width="1200" height="800" alt="Foto do carro da Alpine"></picture>
+      </div>
+    </div>
     <div class="conteudo container-800">
       <ul class="equipe-stats" id="alpine">
         <li>Full Team Name <span>BWT Alpine F1 Team</span></li>
@@ -181,7 +214,7 @@
         <li>Fastest Laps <span>15</span></li>
       </ul>
       <img class="img-piloto" src="img/pilotos/alonso.jpg" width="1920" height="1920" alt="Foto do piloto Fernando Alonso">
-      <img class="img-piloto" src="img/pilotos/occon.jpg" width="1920" height="1920" alt="Foto do piloto Esteban Ocon">
+      <img class="img-piloto2" src="img/pilotos/occon.jpg" width="1920" height="1920" alt="Foto do piloto Esteban Ocon">
       <div class="pilotos">
         <img src="img/bandeiras/spain.png" width="100" height="67" alt="">
         <h2>Fernando Alonso</h2>
@@ -218,14 +251,16 @@
       </div>
     </div>
   </section>
-  <section class="container-1000 hide">
-    <h1>Alpine</h1>
-    <picture class="img-grid">
-      <img src="img/carros/aston-martin/aston1.jpg" width="1200" height="800" alt="Foto do carro da Aston Martin">
-      <img src="img/carros/aston-martin/aston2.jpg" width="1200" height="800" alt="Foto do carro da Aston Martin">
-      <img src="img/carros/aston-martin/aston3.jpg" width="1200" height="800" alt="Foto do carro da Aston Martin">
-      <img src="img/carros/aston-martin/aston4.jpg" width="1200" height="800" alt="Foto do carro da Aston Martin">
-    </picture>
+  <section class="container-1000 hide aston-martin">
+    <h1>Aston Martin</h1>
+    <div class="container-img">
+      <div class="img-grid row">
+        <picture class="card-img"><img class="small-img" src="img/carros/aston-martin/aston1.jpg" width="1200" height="800" alt="Foto do carro da Aston Martin"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/aston-martin/aston2.jpg" width="1200" height="800" alt="Foto do carro da Aston Martin"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/aston-martin/aston3.jpg" width="1200" height="800" alt="Foto do carro da Aston Martin"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/aston-martin/aston4.jpg" width="1200" height="800" alt="Foto do carro da Aston Martin"></picture>
+      </div>
+    </div>
     <div class="conteudo container-800">
       <ul class="equipe-stats" id="aston-martin">
         <li>Full Team Name <span>Aston Martin Aramco Cognizant F1 Team</span></li>
@@ -241,7 +276,7 @@
         <li>Fastest Laps <span>N/A</span></li>
       </ul>
       <img class="img-piloto" src="img/pilotos/vettel.jpg" width="1920" height="1920" alt="Foto do piloto Sebastian Vettel">
-      <img class="img-piloto" src="img/pilotos/stroll.jpg" width="1920" height="1920" alt="Foto do piloto Lance Stroll">
+      <img class="img-piloto2" src="img/pilotos/stroll.jpg" width="1920" height="1920" alt="Foto do piloto Lance Stroll">
       <div class="pilotos">
         <img src="img/bandeiras/alemanha.png" width="100" height="67" alt="">
         <h2>Sebastian Vettel</h2>
@@ -278,14 +313,16 @@
       </div>
     </div>
   </section>
-  <section class="container-1000 hide">
-    <h1>Alpine</h1>
-    <picture class="img-grid">
-      <img src="img/carros/ferrari/ferrari1.jpg" width="1200" height="800" alt="Foto do carro da Ferrari">
-      <img src="img/carros/ferrari/ferrari2.jpg" width="1200" height="800" alt="Foto do carro da Ferrari">
-      <img src="img/carros/ferrari/ferrari3.jpg" width="1200" height="800" alt="Foto do carro da Ferrari">
-      <img src="img/carros/ferrari/ferrari4.jpg" width="1200" height="800" alt="Foto do carro da Ferrari">
-    </picture>
+  <section class="container-1000 hide ferrari">
+    <h1>Ferrari</h1>
+    <div class="container-img">
+      <div class="img-grid row">
+        <picture class="card-img"><img class="small-img" src="img/carros/ferrari/ferrari1.jpg" width="1200" height="800" alt="Foto do carro da Ferrari"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/ferrari/ferrari2.jpg" width="1200" height="800" alt="Foto do carro da Ferrari"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/ferrari/ferrari3.jpg" width="1200" height="800" alt="Foto do carro da Ferrari"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/ferrari/ferrari4.jpg" width="1200" height="800" alt="Foto do carro da Ferrari"></picture>
+      </div>
+    </div>
     <div class="conteudo container-800">
       <ul class="equipe-stats" id="ferrari">
         <li>Full Team Name <span>Scuderia Ferrari</span></li>
@@ -301,7 +338,7 @@
         <li>Fastest Laps <span>256</span></li>
       </ul>
       <img class="img-piloto" src="img/pilotos/leclerc.jpg" width="1920" height="1920" alt="Foto do piloto Charles Leclerc">
-      <img class="img-piloto" src="img/pilotos/sainz.jpg" width="1920" height="1920" alt="Foto do piloto Carlos Sainz">
+      <img class="img-piloto2" src="img/pilotos/sainz.jpg" width="1920" height="1920" alt="Foto do piloto Carlos Sainz">
       <div class="pilotos">
         <img src="img/bandeiras/monaco.png" width="100" height="67" alt="">
         <h2>Charles Leclerc</h2>
@@ -338,14 +375,16 @@
       </div>
     </div>
   </section>
-  <section class="container-1000 hide">
-    <h1>Alpine</h1>
-    <picture class="img-grid">
-      <img src="img/carros/hass/haas1.jpg" width="1200" height="800" alt="Foto do carro da Hass">
-      <img src="img/carros/hass/haas2.jpg" width="1200" height="800" alt="Foto do carro da Hass">
-      <img src="img/carros/hass/haas3.jpg" width="1200" height="800" alt="Foto do carro da Hass">
-      <img src="img/carros/hass/haas4..jpg" width="1200" height="800" alt="Foto do carro da Hass">
-    </picture>
+  <section class="container-1000 hide hass">
+    <h1>Hass</h1>
+    <div class="container-img">
+      <div class="img-grid row">
+        <picture class="card-img"><img class="small-img" src="img/carros/hass/haas1.jpg" width="1200" height="800" alt="Foto do carro da Hass"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/hass/haas2.jpg" width="1200" height="800" alt="Foto do carro da Hass"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/hass/haas3.jpg" width="1200" height="800" alt="Foto do carro da Hass"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/hass/haas4..jpg" width="1200" height="800" alt="Foto do carro da Hass"></picture>
+      </div>
+    </div>
     <div class="conteudo container-800">
       <ul class="equipe-stats" id="hass">
         <li>Full Team Name <span>Haas F1 Team</span></li>
@@ -361,7 +400,7 @@
         <li>Fastest Laps <span>2</span></li>
       </ul>
       <img class="img-piloto" src="img/pilotos/magnusen.jpg" width="1920" height="1920" alt="Foto do piloto Kevin Magnussen">
-      <img class="img-piloto" src="img/pilotos/schum.jpg" width="1920" height="1920" alt="Foto do piloto Mick Schumacher">
+      <img class="img-piloto2" src="img/pilotos/schum.jpg" width="1920" height="1920" alt="Foto do piloto Mick Schumacher">
       <div class="pilotos">
         <img src="img/bandeiras/dinamarca.png" width="100" height="67" alt="">
         <h2>Kevin Magnussen</h2>
@@ -393,19 +432,21 @@
           <li>Highest race finish <span>11</span></li>
           <li>Highest grid position <span>12</span></li>
           <li>Date of birth <span>22/03/1999</span></li>
-          <li>Place of birth <span>Vufflens-le-Château, Switzerland</span></li>
+          <li>Place of birth <span>Vufflens, Switzerland</span></li>
         </ul>
       </div>
     </div>
   </section>
-  <section class="container-1000 hide">
-    <h1>Alpine</h1>
-    <picture class="img-grid">
-      <img src="img/carros/mclaren/maclaren1.jpg" width="1200" height="800" alt="Foto do carro da Mclaren">
-      <img src="img/carros/mclaren/maclaren2.jpg" width="1200" height="800" alt="Foto do carro da Mclaren">
-      <img src="img/carros/mclaren/maclaren3.jpg" width="1200" height="800" alt="Foto do carro da Mclaren">
-      <img src="img/carros/mclaren/maclaren4.jpg" width="1200" height="800" alt="Foto do carro da Mclaren">
-    </picture>
+  <section class="container-1000 hide mclaren">
+    <h1>McLaren</h1>
+    <div class="container-img">
+      <div class="img-grid row">
+        <picture class="card-img"><img class="small-img" src="img/carros/mclaren/maclaren1.jpg" width="1200" height="800" alt="Foto do carro da Mclaren"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/mclaren/maclaren2.jpg" width="1200" height="800" alt="Foto do carro da Mclaren"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/mclaren/maclaren3.jpg" width="1200" height="800" alt="Foto do carro da Mclaren"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/mclaren/maclaren4.jpg" width="1200" height="800" alt="Foto do carro da Mclaren"></picture>
+      </div>
+    </div>
     <div class="conteudo container-800">
       <ul class="equipe-stats" id="mclaren">
         <li>Full Team Name <span>McLaren F1 Team</span></li>
@@ -421,7 +462,7 @@
         <li>Fastest Laps <span>160</span></li>
       </ul>
       <img class="img-piloto" src="img/pilotos/norris.jpg" width="1920" height="1920" alt="Foto do piloto Lando Norris">
-      <img class="img-piloto" src="img/pilotos/riccardo.jpg" width="1920" height="1920" alt="Foto do piloto Daniel Ricciardo">
+      <img class="img-piloto2" src="img/pilotos/riccardo.jpg" width="1920" height="1920" alt="Foto do piloto Daniel Ricciardo">
       <div class="pilotos">
         <img src="img/bandeiras/reino unido.png" width="100" height="67" alt="">
         <h2>Lando Norris</h2>
@@ -458,14 +499,16 @@
       </div>
     </div>
   </section>
-  <section class="container-1000 hide">
-    <h1>Alpine</h1>
-    <picture class="img-grid">
-      <img src="img/carros/mercedes/mercedes1.jpg" width="1200" height="800" alt="Foto do carro da Mercedes">
-      <img src="img/carros/mercedes/mercedes2.jpg" width="1200" height="800" alt="Foto do carro da Mercedes">
-      <img src="img/carros/mercedes/mercedes3.jpg" width="1200" height="800" alt="Foto do carro da Mercedes">
-      <img src="img/carros/mercedes/mercedes4.jpg" width="1200" height="800" alt="Foto do carro da Mercedes">
-    </picture>
+  <section class="container-1000 hide mercedes">
+    <h1>Mercedes</h1>
+    <div class="container-img">
+      <div class="img-grid row">
+        <picture class="card-img"><img class="small-img" src="img/carros/mercedes/mercedes1.jpg" width="1200" height="800" alt="Foto do carro da Mercedes"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/mercedes/mercedes2.jpg" width="1200" height="800" alt="Foto do carro da Mercedes"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/mercedes/mercedes3.jpg" width="1200" height="800" alt="Foto do carro da Mercedes"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/mercedes/mercedes4.jpg" width="1200" height="800" alt="Foto do carro da Mercedes"></picture>
+      </div>
+    </div>
     <div class="conteudo container-800">
       <ul class="equipe-stats" id="mercedes">
         <li>Full Team Name <span> Mercedes-AMG Petronas F1 Team</span></li>
@@ -481,7 +524,7 @@
         <li>Fastest Laps <span>85</span></li>
       </ul>
       <img class="img-piloto" src="img/pilotos/hamilton.jpg" width="1920" height="1920" alt="Foto do piloto Lewis Hamilton">
-      <img class="img-piloto" src="img/pilotos/russel.jpg" width="1920" height="1920" alt="Foto do piloto George Russel">
+      <img class="img-piloto2" src="img/pilotos/russel.jpg" width="1920" height="1920" alt="Foto do piloto George Russel">
       <div class="pilotos">
         <img src="img/bandeiras/reino unido.png" width="100" height="67" alt="">
         <h2>Lewis Hamilton</h2>
@@ -518,14 +561,16 @@
       </div>
     </div>
   </section>
-  <section class="container-1000 hide">
-    <h1>Alpine</h1>
-    <picture class="img-grid">
-      <img src="img/carros/redbull/redbull1.jpg" width="1200" height="800" alt="Foto do carro da Red Bull">
-      <img src="img/carros/redbull/redbull2.jpg" width="1200" height="800" alt="Foto do carro da Red Bull">
-      <img src="img/carros/redbull/redbull3.jpg" width="1200" height="800" alt="Foto do carro da Red Bull">
-      <img src="img/carros/redbull/redbull4.jpg" width="1200" height="800" alt="Foto do carro da Red Bull">
-    </picture>
+  <section class="container-1000 hide red-bull">
+    <h1>Red Bull</h1>
+    <div class="container-img">
+      <div class="img-grid row">
+        <picture class="card-img"><img class="small-img" src="img/carros/redbull/redbull1.jpg" width="1200" height="800" alt="Foto do carro da Red Bull"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/redbull/redbull2.jpg" width="1200" height="800" alt="Foto do carro da Red Bull"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/redbull/redbull3.jpg" width="1200" height="800" alt="Foto do carro da Red Bull"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/redbull/redbull4.jpg" width="1200" height="800" alt="Foto do carro da Red Bull"></picture>
+      </div>
+    </div>
     <div class="conteudo container-800">
       <ul class="equipe-stats" id="red-bull">
         <li>Full Team Name <span>Oracle Red Bull Racing</span></li>
@@ -541,9 +586,9 @@
         <li>Fastest Laps <span>76</span></li>
       </ul>
       <img class="img-piloto" src="img/pilotos/max.jpg" width="1920" height="1920" alt="Foto do piloto Max Verstappen">
-      <img class="img-piloto" src="img/pilotos/perez.jpg" width="1920" height="1920" alt="Foto do piloto Sergio Perez">
+      <img class="img-piloto2" src="img/pilotos/perez.jpg" width="1920" height="1920" alt="Foto do piloto Sergio Perez">
       <div class="pilotos">
-        <img src="img/bandeiras/netherlands.png unido.png" width="100" height="67" alt="">
+        <img src="img/bandeiras/netherlands.png" width="100" height="67" alt="">
         <h2>Max Verstappen</h2>
         <ul class="piloto-stats">
           <li>Team <span>Red Bull</span></li>
@@ -578,14 +623,16 @@
       </div>
     </div>
   </section>
-  <section class="container-1000 hide">
-    <h1>Alpine</h1>
-    <picture class="img-grid">
-      <img src="img/carros/willians/wilians1.jpg" width="1200" height="800" alt="Foto do carro da Williams">
-      <img src="img/carros/willians/wilians2.jpg" width="1200" height="800" alt="Foto do carro da Williams">
-      <img src="img/carros/willians/wilians3.jpg" width="1200" height="800" alt="Foto do carro da Williams">
-      <img src="img/carros/willians/wilians4.jpg" width="1200" height="800" alt="Foto do carro da Williams">
-    </picture>
+  <section class="container-1000 hide williams">
+    <h1>Williams</h1>
+    <div class="container-img">
+      <div class="img-grid row">
+        <picture class="card-img"><img class="small-img" src="img/carros/willians/wilians1.jpg" width="1200" height="800" alt="Foto do carro da Williams"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/willians/wilians2.jpg" width="1200" height="800" alt="Foto do carro da Williams"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/willians/wilians3.jpg" width="1200" height="800" alt="Foto do carro da Williams"></picture>
+        <picture class="card-img"><img class="small-img" src="img/carros/willians/wilians4.jpg" width="1200" height="800" alt="Foto do carro da Williams"></picture>
+      </div>
+    </div>
     <div class="conteudo container-800">
       <ul class="equipe-stats" id="williams">
         <li>Full Team Name <span>Williams Racing</span></li>
@@ -601,7 +648,7 @@
         <li>Fastest Laps <span>133</span></li>
       </ul>
       <img class="img-piloto" src="img/pilotos/latifi.jpg" width="1920" height="1920" alt="Foto do piloto Nicholas Latifi">
-      <img class="img-piloto" src="img/pilotos/albon.jpg" width="1920" height="1920" alt="Foto do piloto Alexander Albon">
+      <img class="img-piloto2" src="img/pilotos/albon.jpg" width="1920" height="1920" alt="Foto do piloto Alexander Albon">
       <div class="pilotos">
         <img src="img/bandeiras/canada.png" width="100" height="67" alt="">
         <h2>Nicholas Latifi</h2>
@@ -641,6 +688,8 @@
   <footer class="footer">
     <p>Site criado por Gustavo Monteiro</p>
   </footer>
+  <script src="js/equipes.js"></script>
+  <script src="js/imagens.js"></script>
 </body>
 
 </html>
