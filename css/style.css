@@ -1,0 +1,166 @@
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+.container-1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container-800 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-container {
+  background: linear-gradient(
+    rgba(255, 0, 0, 0.2) 0%,
+    rgba(255, 0, 0, 0.2) 10%,
+    white 10%,
+    white 30%,
+    rgba(255, 0, 0, 0.2) 30%,
+    rgba(255, 0, 0, 0.2) 40%,
+    white 40%,
+    white 60%,
+    rgba(255, 0, 0, 0.2) 60%,
+    rgba(255, 0, 0, 0.2) 70%,
+    white 70%,
+    white 90%,
+    rgba(255, 0, 0, 0.2) 90%
+  );
+}
+
+.header {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 20px auto;
+  opacity: 1;
+}
+
+.header img {
+  max-height: 50px;
+}
+
+.img-principal {
+  max-height: 400px;
+  margin: 0 auto;
+}
+
+.equipes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.equipes img {
+  max-width: 90px;
+}
+
+.equipes li a {
+  display: block;
+  background-color: rgb(236, 236, 236);
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.384);
+  transition: 0.6s;
+}
+
+.equipes li a:hover {
+  box-shadow: 2px 2px 5px 0px rgb(255, 0, 0);
+  transform: rotate(5deg);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.img-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.img-grid img {
+  max-width: 240px;
+}
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.equipe-stats {
+  grid-column: 1/-1;
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.equipe-stats::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.3;
+  background-image: url(/img/logos/alfaromeo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px;
+}
+
+.equipe-stats li,
+.piloto-stats li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.equipe-stats li + li,
+.piloto-stats li + li {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.equipe-stats span,
+.piloto-stats span {
+  font-weight: normal;
+}
+
+.img-piloto {
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 30px;
+}
