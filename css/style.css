@@ -108,7 +108,7 @@ h1 {
 .equipe-stats {
   grid-column: 1/-1;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   margin-top: 30px;
   margin-bottom: 10px;
 }
