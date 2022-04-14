@@ -56,6 +56,7 @@ body {
 .img-principal {
   max-height: 400px;
   margin: 0 auto;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.3);
 }
 
 .equipes {
@@ -97,6 +98,19 @@ h1 {
   font-size: 3rem;
   margin-bottom: 20px;
   font-weight: bold;
+  position: relative;
+  padding-left: 20px;
+}
+
+h1:before {
+  content: "";
+  width: 10px;
+  height: 40px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border-radius: 10px;
 }
 
 .conteudo {
@@ -111,6 +125,8 @@ h1 {
   z-index: 1;
   margin-top: 30px;
   margin-bottom: 10px;
+  border-top: 4px solid red;
+  border-bottom: 4px solid red;
 }
 
 .equipe-stats li,
@@ -135,6 +151,7 @@ h1 {
 .img-piloto,
 .img-piloto2 {
   object-fit: cover;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.3);
 }
 
 .pilotos {
@@ -155,6 +172,8 @@ h1 {
 
 .piloto-stats {
   grid-column: 1/-1;
+  border-top: 4px solid red;
+  border-bottom: 4px solid red;
 }
 
 .footer {
