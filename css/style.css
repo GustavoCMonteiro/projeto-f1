@@ -266,4 +266,8 @@ h1 {
   .card-logo {
     width: 70px;
   }
+  .pilotos img {
+    border-radius: 0px;
+    max-width: 67px;
+  }
 }
