@@ -144,7 +144,6 @@ h1 {
 }
 
 .pilotos h2 {
-  display: inline-block;
   font-size: 2rem;
   text-align: center;
   font-weight: bold;
@@ -269,5 +268,17 @@ h1 {
   .pilotos img {
     border-radius: 0px;
     max-width: 67px;
+  }
+  #alfa-romeo:before,
+  #alpha-tauri:before,
+  #alpine:before,
+  #aston-martin:before,
+  #ferrari:before,
+  #hass:before,
+  #mclaren:before,
+  #mercedes:before,
+  #red-bull:before,
+  #williams:before {
+    opacity: 0.1;
   }
 }

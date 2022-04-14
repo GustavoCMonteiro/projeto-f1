@@ -93,11 +93,11 @@
     width: 90vw;
   }
   .modal {
-    right: 10px;
-    width: 100%;
+    left: 0;
+    width: 90%;
     height: 100%;
   }
   .small-img:hover {
-    transform: scale();
+    transform: scale(1);
   }
 }
