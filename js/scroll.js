@@ -2,7 +2,7 @@ const animLeft = document.querySelectorAll(".js-scroll-left");
 const animRight = document.querySelectorAll(".js-scroll-right");
 
 function scrollDown() {
-  const windowHalf = window.innerHeight * 0.6;
+  const windowHalf = window.innerHeight * 0.7;
   animLeft.forEach((section) => {
     const sectionTop = section.getBoundingClientRect().top - windowHalf;
     if (sectionTop < 0) {
