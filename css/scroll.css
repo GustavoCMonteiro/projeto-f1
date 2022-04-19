@@ -1,0 +1,18 @@
+.js-scroll-left {
+  opacity: 0;
+  transform: translate3d(-40px, 0, 0);
+  transition: .5s;
+}
+
+.js-scroll-right {
+  opacity: 0;
+  transform: translate3d(+40px, 0, 0);
+  transition: .5s;
+}
+
+.scroll-left,
+.scroll-right {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
