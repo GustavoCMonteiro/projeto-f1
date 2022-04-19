@@ -9,8 +9,13 @@ body {
   background-color: rgb(220, 220, 220);
 }
 
-.hide {
+section {
   display: none;
+}
+
+.show {
+  display: block;
+  animation: show 0.5s forwards;
 }
 
 .container-1000 {
@@ -293,5 +298,16 @@ h1:before {
   #red-bull:before,
   #williams:before {
     opacity: 0.1;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
