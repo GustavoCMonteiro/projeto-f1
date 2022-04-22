@@ -12,12 +12,17 @@ for (let i = 0; i < imagens.length; i++) {
   });
 }
 
-close.addEventListener("click", function () {
+function fecharModal(event) {
+  event.preventDefault();
   modal.classList.remove("modal-active");
-});
+}
+
+close.addEventListener("click", fecharModal);
 
 document.addEventListener("keydown", function (event) {
-  if (event.key === "Escape") {
-    modal.classList.remove("modal-active");
-  }
+  if (event.key === "Escape") fecharModal(event);
+});
+
+modal.addEventListener("click", function (event) {
+  if (event.target === this) fecharModal(event);
 });
