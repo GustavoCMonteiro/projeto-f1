@@ -17,6 +17,6 @@
 ### Projeto desenvolvido com o objetivo de treinar os meus conhecimentos em HTML, CSS, e JavaScript, e também para servir de portfólio, demonstrando minhas habilidades na criação de uma página.
 
 <br>
-<img height="400em" src="https://github.com/GustavoCMonteiro/projeto-f1/blob/main/img/projetof1.gif"/>
+<img height="460em" src="https://github.com/GustavoCMonteiro/projeto-f1/blob/main/img/projetof1.gif"/>
 <br>
 
